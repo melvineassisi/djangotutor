@@ -1,0 +1,34 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>User Page</title>
+
+
+</head>
+
+<body>
+ <table class="table">
+        <thead>
+        
+        </thead>
+        <tbody>
+        {% for al in data %}
+            <tr>
+            <td>{{al.artist}}</td>
+            <td>{{al.album_title}}</td>
+            
+            </tr>
+        {% endfor %}
+        </tbody>
+</table>
+</body>
+
+</html>
